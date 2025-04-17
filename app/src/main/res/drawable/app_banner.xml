@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_dark" />
+            <size android:width="320dp" android:height="180dp" />
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <bitmap
+            android:src="@drawable/ic_airplay"
+            android:tint="@android:color/white" />
+    </item>
+    <item android:bottom="40dp" android:gravity="bottom|center_horizontal">
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000" />
+            <size android:width="250dp" android:height="40dp" />
+        </shape>
+    </item>
+    <item android:bottom="40dp" android:gravity="bottom|center_horizontal">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/app_title" />
+    </item>
+</layer-list>
