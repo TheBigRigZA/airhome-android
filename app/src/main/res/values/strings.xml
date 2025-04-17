@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AirHome</string>
+    <string name="app_description">Bridge AirPlay to Google Home and networked speakers</string>
+    
+    <!-- Main Activity -->
+    <string name="title_activity_main">AirHome</string>
+    <string name="status_running">AirPlay bridge is running</string>
+    <string name="status_stopped">AirPlay bridge is stopped</string>
+    <string name="service_title">AirPlay Service</string>
+    <string name="settings_title">Settings</string>
+    <string name="device_name_label">Device Name</string>
+    <string name="device_name_hint">Enter device name</string>
+    <string name="auto_start_label">Start on Boot</string>
+    <string name="transcoding_label">Audio Transcoding</string>
+    <string name="save_button">Save</string>
+    <string name="help_button">Help</string>
+    
+    <!-- Help Activity -->
+    <string name="title_activity_help">Help</string>
+    <string name="back_button">Back</string>
+    <string name="help_about_title">About AirHome</string>
+    <string name="help_how_to_use_title">How to Use</string>
+    <string name="help_settings_title">Settings</string>
+    <string name="help_troubleshooting_title">Troubleshooting</string>
+    
+    <!-- Service Notifications -->
+    <string name="notification_title">AirHome Running</string>
+    <string name="notification_text">AirPlay bridge is active</string>
+    <string name="notification_channel_name">AirHome Service</string>
+    <string name="notification_channel_description">Keeps AirHome running in background</string>
+</resources>
