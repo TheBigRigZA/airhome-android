@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="48dp"
+    android:background="@color/background_dark">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/help_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_help"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Help content in a scrollview -->
+    <ScrollView
+        android:id="@+id/help_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@id/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/help_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Help section: About -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_about_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="AirHome enables AirPlay streaming from your Apple devices directly to Google Home, networked speakers, and your Android TV. The app creates a virtual AirPlay receiver that appears on your network, allowing iPhones, iPads, and Macs to send audio to any compatible speakers in your home."
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary" />
+
+            <!-- Help section: How to use -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/help_how_to_use_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="1. Enable the AirPlay service using the toggle switch on the main screen.\n\n2. On your Apple device, open the Control Center by swiping down from the top-right corner (or up from the bottom on older devices).\n\n3. Tap the AirPlay icon in the audio/video playback controls.\n\n4. Select your Android TV device from the list of available AirPlay receivers.\n\n5. Audio from your Apple device will now play through your selected speakers."
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary" />
+
+            <!-- Help section: Settings -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/help_settings_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="• Device Name: The name that will appear in the AirPlay device list on your Apple devices.\n\n• Start on Boot: When enabled, the AirPlay service will automatically start when your Android TV turns on.\n\n• Audio Transcoding: When enabled, audio will be converted to a format compatible with your speakers if needed. Disable this only if you experience performance issues."
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary" />
+
+            <!-- Help section: Troubleshooting -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/help_troubleshooting_title"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="• If your Apple device doesn't see the Android TV in the AirPlay device list, make sure both devices are on the same WiFi network.\n\n• If you experience audio delays or dropouts, try disabling Audio Transcoding in settings.\n\n• If audio stops after a period of inactivity, check your Android TV's power saving settings and ensure the AirHome app is excluded from battery optimizations.\n\n• For any other issues, try restarting both your Android TV and your Apple device."
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Back button -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_button"
+        android:focusable="true"
+        android:background="@drawable/button_background"
+        android:textColor="@color/button_text"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
